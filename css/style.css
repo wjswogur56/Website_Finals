@@ -1,0 +1,572 @@
+/*****************
+Navigation Bar
+*****************/
+div#NavBar {
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    
+    height: 62px;
+    width: 2000px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: fixed;
+    
+    opacity: 0.98;
+    background-color: #111;
+    z-index: 2;
+}
+ul.NavBar {
+  list-style-type: none;
+        margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+li.NavBar {
+    float: left;
+}
+li a.NavBar{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 20px 22px 20px;
+    text-decoration: none;
+}
+li p.NavBar{
+    margin: auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px 18px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #3C9F40;
+}
+/* Change the link color to #111 (black) on hover */
+li a.NavBar:hover {
+  background-color: #333;
+}
+li a.NavBar:active {
+  background-color: #3C9F40;
+}
+
+/*****************
+Title/First header
+*****************/
+
+div#Head {
+    /*Font styling for the head*/
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    
+    /*Head margin*/
+    margin-left: S10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    
+    height: 160px;
+    
+    /*Background color*/
+    background-color: #FEFFFF;
+}
+
+/*****************
+    Body
+*****************/
+body {
+    background-color: #FEFFFF;
+}
+
+div#Body {
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 30px;
+    
+    background-color: #FEFFFF;
+}
+/*****************
+    Block
+*****************/
+div.Block {
+    background-color: #FEFFFF;
+    
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10%;
+    margin-right:10%;
+    padding: 10px 10px 10px 10px;
+    
+    border-radius: 3px;
+    border: 3px solid #CCC;
+    
+}
+
+/*****************
+    Footer
+*****************/
+.Contact {
+    background-color: #FEFFFF;
+    
+    color: #111;
+    height: 60px;
+    margin-left:-10px;
+    margin-right:-10px;
+    
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* get rid of margin between text on footer*/
+.FooterText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*****************
+Head hr
+*****************/
+hr.Head {
+    
+    border: 1.5px solid;
+    border-radius: 3px;
+    
+    color: #CCC;
+}
+
+/*****************
+Body hr
+*****************/
+hr.Body {
+    border: 1.5px dashed ;
+    border-radius: 3px;
+    
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    color: #CCC;
+}
+
+/*******************
+Custom ScrollBar
+only for chrome
+*******************/
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    margin-top: 65px;
+    margin-bottom: 5px;
+    opacity: 1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #AAA; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background: #555; 
+}
+
+/*****************
+Custom Checkbox
+*****************/
+/* Customize the label (the container) */
+.Checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.Checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.Checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.Checkbox:hover input ~ .Checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Checkbox input:checked ~ .Checkmark {
+    background-color: #3C9F40;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.Checkbox input:checked ~ .Checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.Checkbox .Checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*****************
+Custom Radio
+*****************/
+/* Customize the label (the container) */
+.Radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.Radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.Dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.Radio:hover input ~ .Dot {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.Radio input:checked ~ .Dot {
+    background-color: #3C9F40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.Dot:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Radio input:checked ~ .Dot:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.Radio .Dot:after {
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*****************
+Custom Checkbox
+*****************/
+/* Customize the label (the container) */
+.Checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.Checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.Checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.Checkbox:hover input ~ .Checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Checkbox input:checked ~ .Checkmark {
+    background-color: #3C9F40;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.Checkbox input:checked ~ .Checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.Checkbox .Checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*****************
+Custom Radio for fluency Q
+*****************/
+/* Customize the label (the container) */
+.Radio_F {
+    display: inline;
+    position: relative;
+    padding-left: 50px; /*width*/
+    margin: 20px -3px 20px -3px;
+    cursor: pointer;
+    font-size: 22px;  /*height*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 3px solid #AAA;
+}
+
+/* Hide the browser's default radio button */
+.Radio_F input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.Dot_F {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-color: #eee;
+    border-radius: 0%;
+}
+
+/* On mouse-over, add a grey background color */
+.Radio_F:hover input ~ .Dot_F {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.Radio_F input:checked ~ .Dot_F {
+    background-color: #3C9F40;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.Dot_F:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Radio_F input:checked ~ .Dot_F:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.Radio_F .Dot_F:after {
+    
+}
+/*****************************************************/
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 0%;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 8px 2px 0px 0px;
+    cursor: pointer;
+}
+
+.Title {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Textbok style */
+.Textbox {
+    width: 100%;
+    padding: 6px 6px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #CCC;
+    
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.Button_Submit {
+   width: 95%;
+    margin: 20px auto 20px;
+    overflow: hidden
+}
+
+.Radio_Det {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: center;
+    font-size: 80% auto;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+    
+    white-space: : nowrap;
+}
+
+.Checkbox_Time {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: left;
+    font-size: 22px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.Block_Gender {
+    background-color: #DDD;
+    border-radius: 5px;
+    
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 20px 5px 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.Dropdown_Major {
+    margin: 5px 20px 5px 20px;
+}
+
+.Textbox_Class {
+    margin: 5px 20px 5px 20px;
+}
+.Text_Time {
+    Margin: 0px 10px 0px 35px;
+    padding: 0px;
+}
+
+.Text_Gender {
+    Margin: 0px 10px 0px 35px;
+    padding: 0px;
+}
+
+.Table_F {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Text_F {
+    margin: 0px 10px 0px 10px;
+}
+
+table {
+    
+}
+
+
+
+.Dropdown {
+    
+}
