@@ -17,8 +17,8 @@ div#NavBar {
     z-index: 2;
 }
 ul.NavBar {
-  list-style-type: none;
-        margin: 0;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #111;
@@ -57,12 +57,12 @@ Title/First header
 
 div#Head {
     /*Font styling for the head*/
-    text-align: left;
+    text-align: center;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     
     /*Head margin*/
-    margin-left: S10px;
+    margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
     margin-bottom: -10px;
@@ -70,7 +70,7 @@ div#Head {
     height: 160px;
     
     /*Background color*/
-    background-color: #FEFFFF;
+    background-color: #111;
 }
 
 /*****************
@@ -93,16 +93,15 @@ div#Body {
     Block
 *****************/
 div.Block {
-    background-color: #FEFFFF;
+    box-shadow: 5px 5px 5px 4px #DDDDDD;
+    background-color: #EDEEEE;
     
-    margin-top:10px;
-    margin-bottom:10px;
-    margin-left:10%;
-    margin-right:10%;
-    padding: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     
     border-radius: 3px;
     border: 3px solid #CCC;
+    
+    line-height: 2;
     
 }
 
@@ -110,16 +109,21 @@ div.Block {
     Footer
 *****************/
 .Contact {
-    background-color: #FEFFFF;
+    background-color: #111;
     
-    color: #111;
-    height: 60px;
+    color: #FEFFFF;
+    height: 90px;
     margin-left:-10px;
     margin-right:-10px;
+    
+    padding-top: 10px;
+    padding-bottom: 20px;
     
     text-align: center;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+    
+    
     
 }
 
@@ -152,7 +156,7 @@ hr.Body {
     margin-top: 20px;
     margin-bottom: 20px;
     
-    color: #CCC;
+    color: #111;
 }
 
 /*******************
@@ -479,9 +483,11 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .Title {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    
+    margin-top: 10px;
+    padding: 200px;
+    color: aliceblue
+
 }
 
 /* Textbok style */
@@ -569,4 +575,50 @@ table {
 
 .Dropdown {
     
+}
+
+.paragraph {
+    font-size: 14px;
+    
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.imgdis {
+    font-size: 12px;
+    
+    margin-top:-20px;
+    margin-bottom:20px;
+    margin-left:5%;
+    margin-right:5%;
+    
+}
+
+.image {
+    box-shadow: 5px 5px 5px 4px #CCCCCC;
+}
+
+.main {
+   
+}
+
+#myBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #111; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
