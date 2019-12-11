@@ -93,10 +93,13 @@ div#Body {
     Block
 *****************/
 div.Block {
+    margin-left: 400px;
+    margin-right: 400px;
+    
     box-shadow: 5px 5px 5px 4px #DDDDDD;
     background-color: #EDEEEE;
     
-    padding: 5px 5px 5px 5px;
+    padding: 20px 20px 20px 20px;
     
     border-radius: 3px;
     border: 3px solid #CCC;
@@ -151,8 +154,8 @@ hr.Body {
     border: 1.5px dashed ;
     border-radius: 3px;
     
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 500px;
+    margin-right: 500px;
     margin-top: 20px;
     margin-bottom: 20px;
     
